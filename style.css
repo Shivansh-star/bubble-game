@@ -1,0 +1,84 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+html, body, .outer-box, .innerbox {
+  height: 100%;
+  margin: 0; padding: 0; box-sizing: border-box;
+}
+
+.upper-form { height: 15%; background: #889E73; display: flex; justify-content: center; align-items: center; gap: 300px; }
+
+.outer-box{
+    height: 100vh;
+    width: 100%;
+    background-color: #3D8D7A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.innerbox{
+    width: 90%;
+    height: 90%;
+    background-color: #B3D8A8;
+    display: flex; flex-direction: column;
+}
+.upper-form{
+    height: 15%;
+    background-color: #889E73;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+}
+#box {
+  background-color: rgb(52,126,81);
+  border: 2px solid black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  width: 5rem;
+  height: 3rem;
+}
+
+.bubble {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  max-width: 70px;
+  background-color: rgb(40,142,50);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1px;
+}
+.down-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  gap: 10px;
+  padding: 20px;
+  height: calc(100% - 15%); /* total minus header height */
+  overflow-y: auto;
+}
+.bubble-container{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: fit-content;
+    width: 1280px;
+}
+.bubble:hover{
+    background-color: #1b3502;
+    cursor: pointer;
+}
+#box{
+    font-size: 30px;
+    font-weight: 200px;
+}
